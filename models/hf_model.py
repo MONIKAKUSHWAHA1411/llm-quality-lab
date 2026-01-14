@@ -1,4 +1,5 @@
 # models/hf_model.py
+MODEL_NAME = "google/flan-t5-small"
 
 from transformers import pipeline
 
