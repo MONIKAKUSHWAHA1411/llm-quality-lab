@@ -3,6 +3,14 @@
 from models.hf_model import generate_response
 from evaluators.relevance import relevance_score
 from evaluators.safety import safety_score
+# tests/test_phase1_quality.py
+
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s | %(levelname)s | %(message)s"
+)
 
 
 def test_support_response_meets_quality_thresholds():
